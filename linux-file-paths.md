@@ -68,6 +68,8 @@ For a complete "Purpose" breakdown see the [standard](https://refspecs.linuxfoun
 | /var ||| /var contains variable data files. This includes spool directories and files, administrative and logging data, and transient and temporary files. Some portions of /var are not shareable between different systems. For instance, /var/log, /var/lock, and /var/run. Other portions may be shared, notably /var/mail, /var/cache/man, /var/cache/fonts, and /var/spool/news. /var is specified here in order to make it possible to mount /usr read-only. Everything that once went into /usr that is written to during system operation (as opposed to installation and software maintenance) must be in /var. If /var cannot be made a separate partition, it is often preferable to move /var out of the root partition and into the /usr partition. (This is sometimes done to reduce the size of the root partition or when space runs low in the root partition.) However, /var must not be linked to /usr because this makes separation of /usr and /var more difficult and is likely to create a naming conflict. Instead, link /var to /usr/var. Applications must generally not add directories to the top level of /var. |
 || /account || Process accounting logs (optional) |
 || /cache || Application cache data |
+||| /fonts || Locally-generated fonts (optional) |
+||| /man || Locally-formatted manual pages (optional) |
 || /crash || System crash dumps (optional) |
 || /games || Variable game data (optional) |
 || /lib || Variable state information |

@@ -103,7 +103,7 @@ If you are actually developing software for distribution on Linux systems, then 
 ||| /cron | cron and at job data |
 ||| /lpd | Line-printer daemon print queues (optional) |
 ||| /news | News files (optional) |
-||| /rwho | Rwhod files (optional) |
+||| /rwho | Rwhod daemon files (optional) |
 || /tmp || Temporary files preserved between system reboots |
 || /yp || Network Information Service (NIS) database files (optional) |   
 

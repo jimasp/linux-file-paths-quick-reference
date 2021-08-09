@@ -1,4 +1,4 @@
-# Quick Reference to Linux File Paths 
+# Linux File Paths - Quick Reference
 
 Linux File system directory/folder paths as recommended by the Filesystem Hierarchy Standard 3.0 - modified (reduced for quick reference).   
 

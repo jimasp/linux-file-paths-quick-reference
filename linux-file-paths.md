@@ -1,0 +1,84 @@
+# Linux File Paths 
+
+Quick reference to Linux file paths, compiled from: https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html
+
+| Path | | |Purpose |
+|------|-|-|--------|
+| / ||| Root directory |
+| /bin |||| Essential user command binaries (for use by all users) |
+| /boot ||| Static files of the boot loader |
+| /dev ||| Device files |
+| /etc ||| Host-specific system configuration |
+|| /opt || Configuration files for /opt |
+|| /X11 || Configuration for the X Window System (optional) |
+|| /sgml || Configuration files for SGML (optional) |
+|| /xml || Configuration files for XML (optional) |
+| /home ||| User home directories (optional) |
+| /lib ||| Essential shared libraries and kernel modules |
+| /lib\<qual\> ||| Alternate format essential shared libraries (optional) |
+| /media ||| Mount point for removable media |
+| /mnt ||| Mount point for a temporarily mounted filesystem |
+| /opt ||| Add-on application software packages |
+| /proc ||| Kernel and process information virtual filesystem |
+| /root ||| Home directory for the root user (optional) |
+| /run ||| Run-time variable data |
+| /sbin ||| System binaries |
+| /srv ||| Data for services provided by this system |
+| /sys ||| Kernel and system information virtual filesystem |
+| /tmp ||| Temporary files |
+| /usr |||  /usr is the second major section of the filesystem. /usr is shareable, read-only data. That means that /usr should be shareable between various FHS-compliant hosts and must not be written to. Any information that is host-specific or varies with time is stored elsewhere. Large software packages must not use a direct subdirectory under the /usr hierarchy. |
+|| /bin || Most user commands |
+|| /include || Directory for standard include files/c header files |
+|| /lib || Libraries for programming and packages |
+|| /libexec || Binaries run by other programs (optional) |
+|| /lib\<qual\> || Alternate format libraries (optional) |
+|| /local || Local hierarchy - The /usr/local hierarchy is for use by the system administrator when installing software locally. It needs to be safe from being overwritten when the system software is updated. It may be used for programs and data that are shareable amongst a group of hosts, but not found in /usr. Locally installed software must be placed within /usr/local rather than /usr unless it is being installed to replace or upgrade software in /usr. |
+||| /share | Local architecture-independent hierarchy |
+|| /sbin || Non-essential standard system binaries |
+|| /share || Architecture-independent data |
+|| /src || Source code (optional) |
+| /var ||| /var contains variable data files. This includes spool directories and files, administrative and logging data, and transient and temporary files. Some portions of /var are not shareable between different systems. For instance, /var/log, /var/lock, and /var/run. Other portions may be shared, notably /var/mail, /var/cache/man, /var/cache/fonts, and /var/spool/news. /var is specified here in order to make it possible to mount /usr read-only. Everything that once went into /usr that is written to during system operation (as opposed to installation and software maintenance) must be in /var. If /var cannot be made a separate partition, it is often preferable to move /var out of the root partition and into the /usr partition. (This is sometimes done to reduce the size of the root partition or when space runs low in the root partition.) However, /var must not be linked to /usr because this makes separation of /usr and /var more difficult and is likely to create a naming conflict. Instead, link /var to /usr/var. Applications must generally not add directories to the top level of /var. |
+|| /account || Process accounting logs (optional) |
+|| /cache || Application cache data |
+|| /crash || System crash dumps (optional) |
+|| /games || Variable game data (optional) |
+|| /lib || Variable state information |
+||| /\<editor\> | Editor backup files and state (optional) |
+||| /color| Color management information (optional) |
+||| /hwclock | State directory for hwclock (optional) |
+||| /misc | Miscellaneous variable data |
+|| /lock || Lock files |
+|| /log || Log files and directories |
+|| /mail || User mailbox files (optional) |
+|| /opt || Variable data for /opt |
+|| /run || Run-time variable data |
+|| /spool || Application spool data (inc. cron/at jobs) |
+||| /lpd | Line-printer daemon print queues (optional) |
+||| /rwho | Rwhod files (optional) |
+|| /tmp || Temporary files preserved between system reboots |
+|| /yp || Network Information Service (NIS) database files (optional) |   
+     
+
+---
+
+LSB Workgroup, The Linux Foundation
+Version 3.0
+
+Copyright © 2015 The Linux Foundation
+
+Copyright © 1994-2004 Daniel Quinlan
+
+Copyright © 2001-2004 Paul 'Rusty' Russell
+
+Copyright © 2003-2004 Christopher Yeoh
+
+All trademarks and copyrights are owned by their owners, unless specifically noted otherwise. Use of a term in this document should not be regarded as affecting the validity of any trademark or service mark.
+
+Permission is granted to make and distribute verbatim copies of this standard provided the copyright and this permission notice are preserved on all copies.
+
+Permission is granted to copy and distribute modified versions of this standard under the conditions for verbatim copying, provided also that the title page is labeled as modified including a reference to the original standard, provided that information on retrieving the original standard is included, and provided that the entire resulting derived work is distributed under the terms of a permission notice identical to this one.
+
+Permission is granted to copy and distribute translations of this standard into another language, under the above conditions for modified versions, except that this permission notice may be stated in a translation approved by the copyright holder.
+
+March 19, 2015
+

@@ -1,5 +1,5 @@
 # Quick Reference to Linux File Paths 
-Filesystem Hierarchy Standard - modified (reduced) into markdown tables for quick reference.   
+Filesystem Hierarchy Standard - modified (reduced for quick reference).   
 
 This quick reference is to help you find/organise things quickly.  
 

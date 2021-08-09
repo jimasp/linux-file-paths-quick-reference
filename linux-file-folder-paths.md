@@ -16,7 +16,7 @@ If you are actually developing software for distribution on Linux systems, then 
 
 | Directory | Purpose |
 |-|-|
-| /bin | EEssential command binaries that need to be available in single-user mode, including to bring up the system or repair it,[4] for all users (e.g., cat, ls, cp). |
+| /bin | Essential command binaries that need to be available in single-user mode, including to bring up the system or repair it, for all users (e.g., cat, ls, cp). |
 | /boot | Static files of the boot loader |
 | /dev | Device files |
 | /etc | Host-specific system configuration, sometimes referred to as "Editable Text Configuration" |

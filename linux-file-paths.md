@@ -1,8 +1,30 @@
 # Linux File Paths 
-(Filesystem Hierarchy Standard - modified into markdown.)  
-   
+Filesystem Hierarchy Standard - modified into markdown for quick reference.   
+For full "Purpose" breakdown see the standard.)  
+
+## Top-level directories summary
+
+| Directory | Purpose |
+|-|-|
+| /bin	| Essential command binaries
+| /boot | Static files of the boot loader
+| /dev	| Device files
+| /etc	| Host-specific system configuration
+| /lib	| Essential shared libraries and kernel modules
+| /media| Mount point for removable media
+| /mnt	| Mount point for mounting a filesystem temporarily
+| /opt	| Add-on application software packages
+| /run	| Data relevant to running processes
+| /sbin | Essential system binaries
+| /srv	| Data for services provided by this system
+| /tmp	| Temporary files
+| /usr	| Secondary hierarchy
+| /var	| Variable data
+
+## Full standard breakdown
+
 | Path | | |Purpose |
-|------|-|-|--------|
+|-|-|-|-|
 | / ||| Root directory |
 | /bin ||| Essential user command binaries (for use by all users) |
 | /boot ||| Static files of the boot loader |
@@ -59,6 +81,8 @@
      
 
 ---
+
+## FHS 3.0 Standard Copyright Notice
 
 LSB Workgroup, The Linux Foundation
 Version 3.0

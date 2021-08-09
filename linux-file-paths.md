@@ -53,8 +53,7 @@ If you are actually developing software for distribution on Linux systems, then 
 || /modules || Loadable kernel modules (optional) |
 | /media ||| Mount point for removable media (e.g. /media/cdrom) |
 | /mnt ||| Mount point for a temporarily mounted filesystem |
-| /opt ||| Add-on application software packages. A package to be installed in /opt must locate its static files in a separate /opt/\<package\> or /
-opt/\<provider\> directory tree. |
+| /opt ||| Add-on application software packages. A package to be installed in /opt must locate its static files in a separate /opt/\<package\> or /opt/\<provider\> directory tree. |
 | /proc ||| Kernel and process information virtual filesystem |
 | /root ||| Home directory for the root user (optional) |
 | /run ||| Run-time variable data |

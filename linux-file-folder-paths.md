@@ -110,8 +110,8 @@ If you are actually developing software for distribution on Linux systems, then 
 
 ## Notes from [Wikipedia](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
 
-- Most Linux distributions follow the Filesystem Hierarchy Standard and declare it their own policy to maintain FHS compliance.
-- Some distributions generally follow the standard but deviate from it in some areas. 
+- Most Linux distributions follow the FHS (and declare it their policy to maintain FHS compliance).
+- Some distributions generally follow the standard, but deviate from it in some areas. 
 - The FHS is a "trailing standard", and so documents common practices at a point in time.
 
 ---

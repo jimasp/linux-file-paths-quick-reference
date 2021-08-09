@@ -1,6 +1,6 @@
 # Linux File Paths 
 Filesystem Hierarchy Standard - modified into markdown for quick reference.   
-For full "Purpose" breakdown see the standard.)  
+For a complete "Purpose" breakdown see the [standard](https://refspecs.linuxfoundation.org/FHS_3.0/index.html).  
 
 ## Top-level directories summary
 

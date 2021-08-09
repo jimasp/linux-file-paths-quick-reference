@@ -1,5 +1,5 @@
 # Linux File Paths 
-Filesystem Hierarchy Standard - modified into markdown for quick reference.   
+Filesystem Hierarchy Standard - modified (reduced) into markdown tables for quick reference.   
 For a complete "Purpose" breakdown see the [standard](https://refspecs.linuxfoundation.org/FHS_3.0/index.html).  
 
 ## Top-level directories summary

@@ -6,20 +6,20 @@ For full "Purpose" breakdown see the standard.)
 
 | Directory | Purpose |
 |-|-|
-| /bin	| Essential command binaries
-| /boot | Static files of the boot loader
-| /dev	| Device files
-| /etc	| Host-specific system configuration
-| /lib	| Essential shared libraries and kernel modules
-| /media| Mount point for removable media
-| /mnt	| Mount point for mounting a filesystem temporarily
-| /opt	| Add-on application software packages
-| /run	| Data relevant to running processes
-| /sbin | Essential system binaries
-| /srv	| Data for services provided by this system
-| /tmp	| Temporary files
-| /usr	| Secondary hierarchy
-| /var	| Variable data
+| /bin | Essential command binaries |
+| /boot | Static files of the boot loader |
+| /dev | Device files |
+| /etc | Host-specific system configuration |
+| /lib | Essential shared libraries and kernel modules |
+| /media | Mount point for removable media |
+| /mnt | Mount point for mounting a filesystem temporarily |
+| /opt | Add-on application software packages |
+| /run | Data relevant to running processes |
+| /sbin | Essential system binaries |
+| /srv | Data for services provided by this system |
+| /tmp | Temporary files |
+| /usr | Secondary hierarchy (complex, shareable, read-only data) |
+| /var | Variable data (complex) |
 
 ## Full standard breakdown
 
@@ -73,7 +73,8 @@ For full "Purpose" breakdown see the standard.)
 || /mail || User mailbox files (optional) |
 || /opt || Variable data for /opt |
 || /run || Run-time variable data |
-|| /spool || Application spool data (inc. cron/at jobs) |
+|| /spool || Application spool data |
+||| /cron || cron and at job data |
 ||| /lpd | Line-printer daemon print queues (optional) |
 ||| /rwho | Rwhod files (optional) |
 || /tmp || Temporary files preserved between system reboots |

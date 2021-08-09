@@ -1,4 +1,5 @@
 # Quick Reference to Linux File Paths 
+
 Linux File system paths as recommended by the Filesystem Hierarchy Standard 3.0 - modified (reduced for quick reference).   
 
 This quick reference is to help you find/organise things quickly.  
@@ -105,7 +106,14 @@ If you are actually developing software for distribution on Linux systems, then 
 ||| /rwho | Rwhod files (optional) |
 || /tmp || Temporary files preserved between system reboots |
 || /yp || Network Information Service (NIS) database files (optional) |   
-     
+
+
+## Notes from [Wikipedia](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
+
+- Most Linux distributions follow the Filesystem Hierarchy Standard and declare it their own policy to maintain FHS compliance.
+- Some distributions generally follow the standard but deviate from it in some areas. 
+- The FHS is a "trailing standard", and so documents common practices at a point in time.
+- Modern Linux distributions include a /run directory as a temporary filesystem (tmpfs) for volatile runtime data.
 
 ---
 
@@ -132,4 +140,4 @@ Permission is granted to copy and distribute translations of this standard into 
 
 March 19, 2015
 
-[Wikipedia Page](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
+

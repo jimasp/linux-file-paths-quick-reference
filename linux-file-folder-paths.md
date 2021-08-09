@@ -1,6 +1,6 @@
 # Quick Reference to Linux File Paths 
 
-Linux File system paths as recommended by the Filesystem Hierarchy Standard 3.0 - modified (reduced for quick reference).   
+Linux File system directory/folder paths as recommended by the Filesystem Hierarchy Standard 3.0 - modified (reduced for quick reference).   
 
 This quick reference is to help you find/organise things quickly.  
 

@@ -100,7 +100,7 @@ All trademarks and copyrights are owned by their owners, unless specifically not
 
 Permission is granted to make and distribute verbatim copies of this standard provided the copyright and this permission notice are preserved on all copies.
 
-Permission is granted to copy and distribute modified versions of this standard under the conditions for verbatim copying, provided also that the title page is labeled as modified including a reference to the [original standard](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html), provided that information on retrieving the original standard is included, and provided that the entire resulting derived work is distributed under the terms of a permission notice identical to this one.
+Permission is granted to copy and distribute modified versions of this standard under the conditions for verbatim copying, provided also that the title page is labeled as modified including a reference to the [original standard](https://refspecs.linuxfoundation.org/FHS_3.0/index.html), provided that information on retrieving the original standard is included, and provided that the entire resulting derived work is distributed under the terms of a permission notice identical to this one.
 
 Permission is granted to copy and distribute translations of this standard into another language, under the above conditions for modified versions, except that this permission notice may be stated in a translation approved by the copyright holder.
 

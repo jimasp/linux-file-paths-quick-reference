@@ -57,7 +57,7 @@ If you are actually developing software for distribution on Linux systems, then 
 | /opt ||| Add-on application software packages. A package to be installed in /opt must locate its static files in a separate /opt/\<package\> or /opt/\<provider\> directory tree. |
 | /proc ||| Virtual filesystem providing process and kernel information as files. In Linux, corresponds to a procfs mount. Generally, automatically generated and populated by the system, on the fly. |
 | /root ||| Home directory for the root user (optional) |
-| /run ||| Run-time variable data. Information about the running system since last boot, e.g., currently logged-in users and running daemons. Files under this directory must be either removed or truncated at the beginning of the boot process, but this is not necessary on systems that provide this directory as a temporary filesystem (tmpfs) |
+| /run ||| Run-time variable data. Information about the running system since last boot, e.g., currently logged-in users and running daemons. Files under this directory must be either removed or truncated at the beginning of the boot process, but this is not necessary on (most modern Linux) systems that provide this directory as a temporary filesystem (tmpfs) |
 | /sbin ||| Essential system binaries |
 | /srv ||| Data for services provided by this system. Site-specific data served by this system, such as data and scripts for web servers, data offered by FTP servers, and repositories for version control systems |
 | /sys ||| Kernel and system information virtual filesystem |
@@ -113,7 +113,6 @@ If you are actually developing software for distribution on Linux systems, then 
 - Most Linux distributions follow the Filesystem Hierarchy Standard and declare it their own policy to maintain FHS compliance.
 - Some distributions generally follow the standard but deviate from it in some areas. 
 - The FHS is a "trailing standard", and so documents common practices at a point in time.
-- Modern Linux distributions include a /run directory as a temporary filesystem (tmpfs) for volatile runtime data.
 
 ---
 

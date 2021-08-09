@@ -74,7 +74,7 @@ For full "Purpose" breakdown see the standard.)
 || /opt || Variable data for /opt |
 || /run || Run-time variable data |
 || /spool || Application spool data |
-||| /cron || cron and at job data |
+||| /cron | cron and at job data |
 ||| /lpd | Line-printer daemon print queues (optional) |
 ||| /rwho | Rwhod files (optional) |
 || /tmp || Temporary files preserved between system reboots |

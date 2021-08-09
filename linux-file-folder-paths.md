@@ -102,7 +102,7 @@ If you are actually developing software for distribution on Linux systems, then 
 || /spool || Application spool data (queues) for jobs waiting to be processed |
 ||| /cron | cron and at job data |
 ||| /lpd | Line-printer daemon print queues (optional) |
-||| /news | News |
+||| /news | News files (optional) |
 ||| /rwho | Rwhod files (optional) |
 || /tmp || Temporary files preserved between system reboots |
 || /yp || Network Information Service (NIS) database files (optional) |   

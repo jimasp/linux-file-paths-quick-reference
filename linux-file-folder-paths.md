@@ -1,6 +1,6 @@
 # Linux File Paths - Quick Reference
 
-Linux File system directory/folder paths as recommended by the Filesystem Hierarchy Standard 3.0 - modified (reduced for quick reference).   
+Linux File system directory paths as recommended by the Filesystem Hierarchy Standard 3.0 - modified (reduced for quick reference).   
 
 This quick reference is to help you find/organise things quickly.  
 
@@ -12,7 +12,7 @@ If you are actually developing software for distribution on Linux systems, then 
 - "Static" files include binaries, libraries, documentation files and other files that do not change without system administrator intervention. 
 - "Variable" files are files that are not static.
 
-## Top-level directories summary
+## Top-level folders summary
 
 | Directory | Purpose |
 |-|-|

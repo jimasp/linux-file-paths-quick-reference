@@ -1,4 +1,4 @@
-# Linux File Paths 
+# Quick Reference to Linux File Paths 
 Filesystem Hierarchy Standard - modified (reduced) into markdown tables for quick reference.   
 For a complete "Purpose" breakdown see the [standard](https://refspecs.linuxfoundation.org/FHS_3.0/index.html).  
 

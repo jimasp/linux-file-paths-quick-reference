@@ -2,6 +2,12 @@
 Filesystem Hierarchy Standard - modified (reduced) into markdown tables for quick reference.   
 For a complete "Purpose" breakdown see the [standard](https://refspecs.linuxfoundation.org/FHS_3.0/index.html).  
 
+## Definitions
+- "Shareable" files are those that can be stored on one host and used on others.
+- "Unshareable" files are those that are not shareable. For example, the files in user home directories are shareable whereas device lock files are not.
+- "Static" files include binaries, libraries, documentation files and other files that do not change without system administrator intervention. 
+- "Variable" files are files that are not static.
+
 ## Top-level directories summary
 
 | Directory | Purpose |

@@ -4,7 +4,7 @@
 | Path | | |Purpose |
 |------|-|-|--------|
 | / ||| Root directory |
-| /bin |||| Essential user command binaries (for use by all users) |
+| /bin ||| Essential user command binaries (for use by all users) |
 | /boot ||| Static files of the boot loader |
 | /dev ||| Device files |
 | /etc ||| Host-specific system configuration |

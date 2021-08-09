@@ -15,10 +15,10 @@ If you are actually developing software for distribution on Linux systems, then 
 
 | Directory | Purpose |
 |-|-|
-| /bin | Essential command binaries |
+| /bin | EEssential command binaries that need to be available in single-user mode, including to bring up the system or repair it,[4] for all users (e.g., cat, ls, cp). |
 | /boot | Static files of the boot loader |
 | /dev | Device files |
-| /etc | Host-specific system configuration |
+| /etc | Host-specific system configuration, sometimes referred to as "Editable Text Configuration" |
 | /home | User home directories (optional |
 | /lib | Essential shared libraries and kernel modules |
 | /lib\<qual\> | Alternate formation essential shared libraries (optional) |
@@ -43,34 +43,34 @@ If you are actually developing software for distribution on Linux systems, then 
 | /boot ||| Static files of the boot loader |
 | /dev ||| Device files |
 | /etc ||| Host-specific system configuration |
-|| /opt || Configuration files for /opt |
-|| /X11 || Configuration for the X Window System (optional) |
+|| /opt || Configuration files for add-on packages stored in /opt |
+|| /X11 || Configuration for the X Window System v11 (optional) |
 || /sgml || Configuration files for SGML (optional) |
 || /xml || Configuration files for XML (optional) |
 | /home ||| User home directories (optional) |
-| /lib ||| Essential shared libraries and kernel modules |
-| /lib\<qual\> ||| Alternate format essential shared libraries (optional) |
+| /lib ||| Essential shared libraries and kernel modules, i.e. essential for binaries in /bin and /sbin |
+| /lib\<qual\> ||| Alternate format essential shared libraries, e.g. 32/64 bit (optional) |
 || /modules || Loadable kernel modules (optional) |
 | /media ||| Mount point for removable media (e.g. /media/cdrom) |
 | /mnt ||| Mount point for a temporarily mounted filesystem |
 | /opt ||| Add-on application software packages. A package to be installed in /opt must locate its static files in a separate /opt/\<package\> or /opt/\<provider\> directory tree. |
-| /proc ||| Kernel and process information virtual filesystem |
+| /proc ||| Virtual filesystem providing process and kernel information as files. In Linux, corresponds to a procfs mount. Generally, automatically generated and populated by the system, on the fly. |
 | /root ||| Home directory for the root user (optional) |
-| /run ||| Run-time variable data |
-| /sbin ||| System binaries |
-| /srv ||| Data for services provided by this system |
+| /run ||| Run-time variable data. Information about the running system since last boot, e.g., currently logged-in users and running daemons. Files under this directory must be either removed or truncated at the beginning of the boot process, but this is not necessary on systems that provide this directory as a temporary filesystem (tmpfs) |
+| /sbin ||| Essential system binaries |
+| /srv ||| Data for services provided by this system. Site-specific data served by this system, such as data and scripts for web servers, data offered by FTP servers, and repositories for version control systems |
 | /sys ||| Kernel and system information virtual filesystem |
-| /tmp ||| Temporary files |
-| /usr |||  /usr is the second major section of the filesystem. /usr is shareable, read-only data. That means that /usr should be shareable between various FHS-compliant hosts and must not be written to. Any information that is host-specific or varies with time is stored elsewhere. Large software packages must not use a direct subdirectory under the /usr hierarchy. |
-|| /bin || Most user commands |
+| /tmp ||| Temporary files (see also /var/tmp). Often not preserved between system reboots and may be severely size-restricted. |
+| /usr ||| Secondary hierarchy for read-only user data; contains the majority of (multi-)user utilities and applications. Should be shareable and read-only data. That means that /usr should be shareable between various FHS-compliant hosts and must not be written to. Any information that is host-specific or varies with time is stored elsewhere. Large software packages must not use a direct subdirectory under the /usr hierarchy |
+|| /bin || Non-essential command binaries (not needed in single-user mode), for all users |
 || /include || Directory for standard include files/c header files |
-|| /lib || Libraries for programming and packages |
+|| /lib || Libraries for programming and packages, i.e. libraries for the binaries in /usr/bin and /usr/sbin. |
 || /libexec || Binaries run by other programs (optional) |
 || /lib\<qual\> || Alternate format libraries (optional) |
-|| /local || Local hierarchy - The /usr/local hierarchy is for use by the system administrator when installing software locally. It needs to be safe from being overwritten when the system software is updated. It may be used for programs and data that are shareable amongst a group of hosts, but not found in /usr. Locally installed software must be placed within /usr/local rather than /usr unless it is being installed to replace or upgrade software in /usr. |
+|| /local || Tiertiary, local hierarchy - The /usr/local hierarchy is for use by the system administrator when installing software locally. Local data, specific to this host. Typically has further subdirectories (e.g., bin, lib, share). It needs to be safe from being overwritten when the system software is updated. It may be used for programs and data that are shareable amongst a group of hosts, but not found in /usr. Locally installed software must be placed within /usr/local rather than /usr unless it is being installed to replace or upgrade software in /usr |
 ||| /share | Local architecture-independent hierarchy |
-|| /sbin || Non-essential standard system binaries |
-|| /share || Architecture-independent data |
+|| /sbin || Non-essential standard system binaries (e.g. daemons for various network services) |
+|| /share || Architecture-independent shared data |
 ||| /color | Color management information (optional) |
 ||| /dict | Word lists (optional) |
 ||| /man | Manual pages |
@@ -79,7 +79,7 @@ If you are actually developing software for distribution on Linux systems, then 
 ||| /sgml | SGML data (optional) |
 ||| /xml | XML data (optional) |
 || /src || Source code (optional) |
-| /var ||| /var contains variable data files. This includes spool directories and files, administrative and logging data, and transient and temporary files. Some portions of /var are not shareable between different systems. For instance, /var/log, /var/lock, and /var/run. Other portions may be shared, notably /var/mail, /var/cache/man, /var/cache/fonts, and /var/spool/news. /var is specified here in order to make it possible to mount /usr read-only. Everything that once went into /usr that is written to during system operation (as opposed to installation and software maintenance) must be in /var. If /var cannot be made a separate partition, it is often preferable to move /var out of the root partition and into the /usr partition. (This is sometimes done to reduce the size of the root partition or when space runs low in the root partition.) However, /var must not be linked to /usr because this makes separation of /usr and /var more difficult and is likely to create a naming conflict. Instead, link /var to /usr/var. Applications must generally not add directories to the top level of /var. |
+| /var ||| /var contains variable data files - files whose content is expected to continually change during normal operation of the system, such as logs, spool files, and temporary e-mail files. This includes spool directories and files, administrative and logging data, and transient and temporary files. Some portions of /var are not shareable between different systems. For instance, /var/log, /var/lock, and /var/run. Other portions may be shared, notably /var/mail, /var/cache/man, /var/cache/fonts, and /var/spool/news. /var is specified here in order to make it possible to mount /usr read-only. Everything that once went into /usr that is written to during system operation (as opposed to installation and software maintenance) must be in /var. If /var cannot be made a separate partition, it is often preferable to move /var out of the root partition and into the /usr partition. (This is sometimes done to reduce the size of the root partition or when space runs low in the root partition.) However, /var must not be linked to /usr because this makes separation of /usr and /var more difficult and is likely to create a naming conflict. Instead, link /var to /usr/var. Applications must generally not add directories to the top level of /var. |
 || /account || Process accounting logs (optional) |
 || /crash || System crash dumps (optional) |
 || /cache || Application cache data |
@@ -97,8 +97,8 @@ If you are actually developing software for distribution on Linux systems, then 
 || /log || Log files and directories |
 || /mail || User mailbox files (optional) |
 || /opt || Variable data for /opt |
-|| /run || Run-time variable data |
-|| /spool || Application spool data |
+|| /run || Run-time variable data (now deprecated in favour of /run) |
+|| /spool || Application spool data (queues) for jobs waiting to be processed |
 ||| /cron | cron and at job data |
 ||| /lpd | Line-printer daemon print queues (optional) |
 ||| /news | News |

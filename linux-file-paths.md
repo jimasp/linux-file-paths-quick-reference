@@ -1,8 +1,9 @@
 # Quick Reference to Linux File Paths 
 Filesystem Hierarchy Standard - modified (reduced) into markdown tables for quick reference.   
-For a complete "Purpose" breakdown see the [standard](https://refspecs.linuxfoundation.org/FHS_3.0/index.html).  
+
 This quick reference is to help you find/organise things quickly.  
-If you are actually developing software for distribution on Linux systems, then you should read the standard in full.  
+
+If you are actually developing software for distribution on Linux systems, then you should read the LSB [standard](https://refspecs.linuxfoundation.org/FHS_3.0/index.html) in full.  
 
 ## Definitions
 - "Shareable" files are those that can be stored on one host and used on others.

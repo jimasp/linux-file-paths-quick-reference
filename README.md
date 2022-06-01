@@ -2,7 +2,7 @@
 
 Linux File system directory paths as recommended by the Filesystem Hierarchy Standard 3.0 - modified (reduced for quick reference).   
 
-If you are a beginner, you might first want to check out this [image](https://i.stack.imgur.com/BlpRb.png) (linked from [here(https://askubuntu.com/questions/27213/what-is-the-linux-equivalent-to-windows-program-files/551932#551932)).
+If you are a beginner, you might first want to check out this [image](https://i.stack.imgur.com/BlpRb.png) (originally linked from this [post](https://askubuntu.com/questions/27213/what-is-the-linux-equivalent-to-windows-program-files/551932#551932)).
 
 This quick reference is to help you find/organise things quickly.  
 

@@ -2,10 +2,9 @@
 
 Linux File system directory paths as recommended by the Filesystem Hierarchy Standard 3.0 - modified (reduced for quick reference).   
 
-This quick reference is to help you find/organise things quickly.  
-
 If you are a beginner, you might first want to check out this [image](https://i.stack.imgur.com/BlpRb.png) (linked from [here(https://askubuntu.com/questions/27213/what-is-the-linux-equivalent-to-windows-program-files/551932#551932)).
 
+This quick reference is to help you find/organise things quickly.  
 
 If you are actually developing software for distribution on Linux systems, then you should read the LSB [standard](https://refspecs.linuxfoundation.org/FHS_3.0/index.html) in full. 
 
